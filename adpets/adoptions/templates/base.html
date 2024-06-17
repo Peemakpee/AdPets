@@ -1,0 +1,59 @@
+{% load static %}
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home - AdPets Medicine</title>
+    <link rel="stylesheet" id="ample-style-css" href="{% static 'style.css' %}" type="text/css" media="all">
+</head>
+
+<body class="wide">
+    <div id="page" class="hfeed site">
+        <header>
+            <div class="header">
+                <div class="main-head-wrap inner-wrap clearfix">
+                    <div id="header-logo-image">
+                        <a href="/">
+                            <img src="{% static 'images/logo3.png' %}" alt="Wisdom Pet Medicine">
+                        </a>
+                    </div>
+                    <div id="header-text" class="">
+                        <h1 id="site-title">
+                            <a href="/" title="Wisdom Pet Medicine" rel="home">AdPets Medicine</a>
+                        </h1>
+                        <p>Caring for your pets as if they were our own.</p>
+                    </div>
+                </div>
+                <img src="{% static 'images/header2.png' %}" alt="Wisdom Pet Medicine"
+                    style="display: block; margin: 0 auto;">
+            </div>
+        </header>
+        <div class="main-wrapper">
+            <div class="single-page clearfix">
+                <div class="inner-wrap">
+                    <p>AdPets combines the best of traditional and alternative medicine to diagnose and treat health
+                        conditions in companion animals, including dogs, cats, birds, reptiles, rodents, and fish. We
+                        use the latest healthcare technology, alongside the wisdom of centuries-old veterinary
+                        practices, to find the safest and most effective treatments and cures. Our approach ensures a
+                        caring relationship with both our patients and their guardians.</p>
+                    <hr>
+                    <div>
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="colophon">
+            <div class="inner-wrap">
+                AdPets is a fictitious brand created for educational purposes as a mini project to learn and enhance my
+                skills in the Django framework. All references to products and individuals associated with AdPets are
+                fictional. Any similarity to real brands, products, or persons is purely coincidental. For all pet
+                health-related concerns, please consult your veterinarian.
+            </div>
+        </footer>
+    </div>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+
+</html>
